@@ -1,1 +1,28 @@
-<!-- Anime Realms game files -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anime Realms Online — Multiplayer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="game"></canvas>
+<div id="loading">Loading Anime Realms Online…</div>
+<section id="hud">
+  <strong>ANIME REALMS ONLINE</strong>
+  <div>Whispering Meadow</div>
+  <div class="line"></div>
+  <div>Player: <span id="myname">Explorer</span></div>
+  <div>Companion: <span id="companion">None</span></div>
+  <div>Online players: <span id="count">1</span></div>
+  <div id="connection" class="offline">Connecting to server…</div>
+  <div class="namebox"><input id="name" maxlength="16" value="Explorer" aria-label="Player name"><button id="saveName">Set name</button></div>
+</section>
+<div id="help"><b>CONTROLS</b><br>W A S D — Move<br>Mouse — Look around<br>Click — Lock mouse<br>E — Befriend Lumi<br>Shift — Walk slowly</div>
+<div id="notice"></div>
+<div id="error" hidden></div>
+<script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
